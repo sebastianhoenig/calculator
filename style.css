@@ -1,0 +1,89 @@
+.body {
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 100px);
+    border: 2px solid red;
+    min-height: 100vh;
+}
+
+.display {
+    grid-column: 4 span;
+    text-align: right;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#output {
+    font-size: xx-large;
+    color: rgb(255, 248, 248);
+}
+
+#history {
+    font-size: large;
+    color: rgb(139, 136, 136);
+    min-height: 30px;
+}
+
+.two {
+    grid-column: 2 span;
+}
+
+.number {
+    font-size: large;
+    background-color: rgb(0, 255, 255);
+    border: 1px solid black;
+}
+
+.number:hover {
+    background-color: rgba(0, 255, 255, 0.75);
+}
+
+.operation:hover {
+    background-color: rgba(166, 107, 221, 0.75);
+}
+
+.ac:hover {
+    background-color: rgba(189, 58, 58, 0.75);
+}
+
+.operation {
+    font-size: large;
+    background-color: rgb(166, 107, 221);
+    border: 1px solid black;
+}
+
+.equal:hover {
+    background-color: rgba(17, 141, 17, 0.75);
+}
+
+.equal {
+    font-size: large;
+    background-color: rgb(17, 141, 17);
+    border: 1px solid black;
+}
+
+.ac {
+    font-size: large;
+    background-color: rgb(189, 58, 58);
+    border: 1px solid black;
+}
+
+.del {
+    font-size: large;
+    background-color: rgb(198, 201, 17);
+    border: 1px solid black;
+}
+
+.del:hover {
+    background-color: rgba(198, 201, 17, 0.75);
+}
