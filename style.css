@@ -1,89 +1,102 @@
 .body {
-    padding: 0;
-    margin: 0;
-    background-color: aqua;
+  padding: 0;
+  margin: 0;
+  background-color: aqua;
 }
 
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
 .calculator {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(6, 100px);
-    border: 2px solid red;
-    min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(6, 80px);
+  border: 10px solid rgb(63, 60, 60);
+  height: 480px;
+  background-color: black;
 }
 
 .display {
-    grid-column: 4 span;
-    text-align: right;
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+  grid-column: 4 span;
+  text-align: right;
+  background-color: rgba(51, 42, 42, 0.432);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
 }
 
 #output {
-    font-size: xx-large;
-    color: rgb(255, 248, 248);
+  font-size: xx-large;
+  color: rgb(255, 248, 248);
 }
 
 #history {
-    font-size: large;
-    color: rgb(139, 136, 136);
-    min-height: 30px;
+  font-size: large;
+  color: rgb(139, 136, 136);
+  min-height: 30px;
 }
 
 .two {
-    grid-column: 2 span;
+  grid-column: 2 span;
 }
 
 .number {
-    font-size: large;
-    background-color: rgb(0, 255, 255);
-    border: 1px solid black;
+  font-size: large;
+  background-color: rgb(31, 71, 8);
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 .number:hover {
-    background-color: rgba(0, 255, 255, 0.75);
+  background-color: rgba(31, 71, 8, 0.75);
 }
 
 .operation:hover {
-    background-color: rgba(166, 107, 221, 0.75);
+  background-color: rgba(185, 129, 24, 0.75);
 }
 
 .ac:hover {
-    background-color: rgba(189, 58, 58, 0.75);
+  background-color: rgba(69, 72, 209, 0.75);
 }
 
 .operation {
-    font-size: large;
-    background-color: rgb(166, 107, 221);
-    border: 1px solid black;
+  font-size: large;
+  background-color: rgb(185, 129, 24);
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 .equal:hover {
-    background-color: rgba(17, 141, 17, 0.75);
+  background-color: rgba(185, 129, 24, 0.75);
 }
 
 .equal {
-    font-size: large;
-    background-color: rgb(17, 141, 17);
-    border: 1px solid black;
+  font-size: large;
+  background-color: rgb(185, 129, 24);
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 .ac {
-    font-size: large;
-    background-color: rgb(189, 58, 58);
-    border: 1px solid black;
+  font-size: large;
+  background-color: rgb(69, 72, 209);
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 .del {
-    font-size: large;
-    background-color: rgb(198, 201, 17);
-    border: 1px solid black;
+  font-size: large;
+  background-color: rgb(69, 72, 209);
+  border: 1px solid black;
+  border-radius: 8px;
 }
 
 .del:hover {
-    background-color: rgba(198, 201, 17, 0.75);
+  background-color: rgba(69, 72, 209, 0.75);
 }
